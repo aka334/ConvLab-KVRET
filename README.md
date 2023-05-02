@@ -1,4 +1,4 @@
-# Custom BERT-based Dialogue System with ConvLab-2
+# Custom BERT-based Dialogue System with ConvLab
 
 This repository contains the implementation of a custom BERT-based dialogue system using the ConvLab-2 framework for the KVRET dataset. The main focus of this project is the development of a custom NLU component, while the other components, such as DST, policy, and NLG, are based on pre-built models provided by ConvLab-2.
 
@@ -11,7 +11,7 @@ pip install torch
 pip install transformers
 pip install convlab2
 pip install sklearn
-
+```
 ## Usage
 
 After installing the required packages, you'll need to provide paths to the pretrained models and tokenizers for intent detection and slot filling. The code in this repository assumes that you have already trained these models. If you haven't, you'll need to train them first and save the weights, tokenizers, and label encoders.
@@ -53,11 +53,11 @@ agent_response = agent.response(user_input)
 print(agent_response)
 
 With the dialogue system set up, you can interact with it by providing user inputs and receiving the system's responses.
-
-##License
+```
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-##Acknowledgments
+## Acknowledgments
 
-This project is built upon the ConvLab-2 framework developed by the Tsinghua University Conversational AI Group.
+This project is built upon the ConvLab framework developed by the Tsinghua University Conversational AI Group.
 The BERT models and tokenizers used in this project are based on the Transformers library by Hugging Face.
